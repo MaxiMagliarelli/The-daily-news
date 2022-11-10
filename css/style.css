@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+
+}
+a{
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header{
+    background-image: url(../assets/img/pila-espacio-abajo.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5) ;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.menu {
+    background-color: rgba(0, 0,0,0.3);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 6em;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,.5 ) ;
+}
+.logo{ 
+    flex: 1 1 auto;
+    margin-left: 3em;
+}
+.logo a{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.nav{ 
+    flex: 5 1 auto;
+    margin-right: 10em;
+}
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.navBar li a{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    padding: 0 1rem;
+}
+.navBar li a:hover{
+    color: black;
+}
+
+.navBar li svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.social{ 
+    display: flex;
+    flex: 1 1 auto;
+    column-gap: 3rem;
+}
+
+.social a{
+    color: whitesmoke;
+}
+.social a:hover{
+    color: black;
+
+}
+.textoPrincipal{
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+}
+.textoPrincipal p{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+
+/*  MAIN */
+.main{
+    display: flex;
+    flex-flow: column wrap;    
+}
+.section{
+    display: flex;
+}    
+.articulos{
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+}
+.article{  
+    flex: 1 1 40%;
+    margin: 0.5em;
+}
+.article img{
+    width: 100%;
+}
+.article h3{
+    color: white;
+    margin-top: -2.5em;
+    padding: 0.5em;
+}
+.article h2{
+    text-transform:uppercase ;
+    padding: 0.5rem;
+}
+.article p{
+    font-weight: 900;
+    padding: 0.5em;
+}
+.article a{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0.5rem;
+    display: inline-block;
+    border-radius: 5px;
+}
+.article a:hover{
+    background-color: #546cc3;
+}
+.navegacion{
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+        background-color:black;
+        padding: 0.5em;
+        
+}
+.navegacion ul{
+    display: flex;
+    list-style-type: none;
+    column-gap: 1rem;
+}
+.navegacion a{
+    color: white;
+}
+.navegacion a:hover{
+    color: #546cc3;
+}
+
+.aside{
+    flex: 1 1 auto;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+}
+
+.aside h4{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.publicidad img{
+    width: 350px;
+}
+
+/* FOOTER */
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.pie a{
+        width: 100%;
+        color: white;
+        padding: 0.5em;
+        display: inline-block;
+        font-weight: 700;
+}
+
+/* RESPONSIVE DESING */
+
+@media screen and (max-width: 420px){
+
+    .logo a{
+        font-size: 2rem;
+        margin-right: 3.4rem;
+    }
+    .nav{
+        margin-right: 0;
+        justify-content: space-around;
+    }
+    .navBar li svg{
+        margin-top: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    .off{
+        display: none;
+    }
+    .social a{
+        margin-top: 1rem;
+    }
+    .textoPrincipal{
+        margin-top: 2em;
+    }
+    .textoPrincipal p{
+        text-align: center;
+    }
+    .article{  
+        flex: 1 1 100%;
+        margin: 0.5em;
+    }
+    .aside{
+        flex-direction: column;
+        align-items: center;
+    }
+    .aside div{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .nav{ 
+        margin-right: 0em;
+    }
+    .navBar li a{
+        font-size: 1.05rem;
+    }
+    .navBar li svg{
+        margin-top: 10px;
+    }
+    .social a{
+        margin-top: 16px;
+    }
+    .textoPrincipal{
+        margin-top: 3em;
+    }
+    .textoPrincipal p{
+        font-size: 2rem;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .article{  
+        width: 100%;
+        margin: 0.5em;
+    }
+    .aside{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .publicidad img{
+        width: 100%;
+    }
+}
+
+
+
+/* @media screen and (min-width: 320px) and (max-width: 767px){
+    .section{
+        flex-direction: column;
+    }
+    .articulos{
+        flex-direction: column;
+    }
+    .aside{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .section{
+        flex-direction: column;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+        
+    }
+} */
